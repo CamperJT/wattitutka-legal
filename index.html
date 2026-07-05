@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tietosuojaseloste — Wattitutka</title>
+  <title>Wattitutka — Älykkäästi edullisempaa sähköä</title>
+  <meta name="description" content="Wattitutka auttaa suomalaisia kotitalouksia pienentämään sähkölaskua: tehomaksun arviointi, sopimusvahti ja hintavertailu.">
   <style>
     :root {
       color-scheme: dark;
     }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       background: #0A0E1A;
@@ -19,120 +21,122 @@
     main {
       max-width: 680px;
       margin: 0 auto;
-      padding: 40px 24px 80px;
+      padding: 56px 24px 64px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 44px;
+    }
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #FFFFFF;
+    }
+    .logo .mark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 11px;
+      background: linear-gradient(135deg, #2E7DFF, #16C79A);
+      font-size: 1.25rem;
     }
     h1 {
       color: #FFFFFF;
-      font-size: 1.6rem;
-      margin-bottom: 4px;
+      font-size: 1.9rem;
+      line-height: 1.25;
+      margin: 28px 0 10px;
     }
-    .updated {
-      color: #7A8194;
+    .lead {
+      color: #9AA1B2;
+      font-size: 1.05rem;
+      margin: 0 auto;
+      max-width: 520px;
+    }
+    .badge {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 7px 16px;
+      border: 1px solid #2A3450;
+      border-radius: 999px;
+      color: #9AA1B2;
       font-size: 0.85rem;
-      margin-bottom: 32px;
     }
-    section {
+    section.feature {
       background: #131A2B;
-      border-radius: 12px;
-      padding: 20px;
+      border-radius: 14px;
+      padding: 20px 22px;
       margin-bottom: 14px;
     }
-    h2 {
+    section.feature h2 {
       color: #FFFFFF;
-      font-size: 1.05rem;
-      margin: 0 0 8px;
+      font-size: 1.08rem;
+      margin: 0 0 6px;
     }
-    p {
+    section.feature p {
       margin: 0;
       font-size: 0.95rem;
+      color: #B4BAC8;
     }
-    a {
-      color: #4DA3FF;
+    .grid { margin-top: 8px; }
+    footer {
+      margin-top: 48px;
+      padding-top: 28px;
+      border-top: 1px solid #1D2536;
+      text-align: center;
+      color: #7A8194;
+      font-size: 0.9rem;
     }
+    footer p { margin: 6px 0; }
+    a { color: #4DA3FF; text-decoration: none; }
+    a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
   <main>
-    <h1>Tietosuojaseloste</h1>
-    <p class="updated">Wattitutka — Päivitetty 28.6.2026</p>
+    <header>
+      <div class="logo"><span class="mark">⚡</span> Wattitutka</div>
+      <h1>Älykkäästi edullisempaa sähköä</h1>
+      <p class="lead">Wattitutka auttaa suomalaisia kotitalouksia pienentämään
+      sähkölaskuaan — arvioi tehomaksusi, vahtii sähkösopimustasi ja vertailee
+      hintoja puolestasi.</p>
+      <span class="badge">Tulossa App Storeen</span>
+    </header>
 
-    <section>
-      <h2>Rekisterinpitäjä</h2>
-      <p>Tämän tietosuojaselosteen mukaisesta henkilötietojen käsittelystä
-      vastaa Wattitutka-sovelluksen kehittäjä Joakim Tuominen
-      (<a href="mailto:tietosuoja@wattitutka.fi">tietosuoja@wattitutka.fi</a>).</p>
-    </section>
+    <div class="grid">
+      <section class="feature">
+        <h2>Tehomaksun arviointi</h2>
+        <p>Lataa Datahub-kulutustiedostosi ja näe, paljonko uusi tehopohjainen
+        siirtomaksu vaikuttaa laskuusi — ja miten voit pienentää huipputehoasi.</p>
+      </section>
 
-    <section>
-      <h2>Mitä tietoja käsittelemme</h2>
-      <p>Wattitutka ei vaadi kirjautumista eikä luo käyttäjätilejä. Sovellus
-      tallentaa antamasi profiilitiedot (asuntotyyppi, lämmitystapa,
-      pääsulake, vuosikulutus, sopimustiedot ja postinumero) ensisijaisesti
-      vain omaan laitteeseesi.</p>
-    </section>
+      <section class="feature">
+        <h2>Sopimusvahti</h2>
+        <p>Hintavartija seuraa markkinaa ja ilmoittaa, kun tarjolle tulee
+        nykyistä edullisempi sähkösopimus. Ei kirjautumista, ei tilejä.</p>
+      </section>
 
-    <section>
-      <h2>Palvelimelle tallennettavat tiedot</h2>
-      <p>Jos otat Hintavartija-ilmoitukset käyttöön, palvelimellemme
-      tallennetaan push-ilmoitustunnus (push-token), postinumerosi, nykyisen
-      sopimuksesi tiedot (tyyppi, hinta, perusmaksu) ja arvioitu
-      vuosikulutuksesi. Näitä tietoja käytetään vain siihen, että voimme
-      ilmoittaa sinulle nykyistä edullisemmasta sopimuksesta. Tietoja
-      säilytetään niin kauan kuin Hintavartija on käytössä. Voit poistaa
-      tiedot ottamalla Hintavartijan pois käytöstä.</p>
-    </section>
+      <section class="feature">
+        <h2>Hintavertailu</h2>
+        <p>Vertaa pörssi-, kiinteä- ja määräaikaissopimuksia oman kulutuksesi
+        mukaan ja näe todellinen vuosikustannus, ei pelkkää listahintaa.</p>
+      </section>
+    </div>
 
-    <section>
-      <h2>Käsittelyn oikeusperuste</h2>
-      <p>Hintavartijaan liittyvien tietojen käsittely perustuu
-      suostumukseesi (yleinen tietosuoja-asetus, 6 artiklan 1 kohdan a
-      alakohta), jonka annat ottaessasi ominaisuuden käyttöön ja jonka voit
-      peruuttaa milloin tahansa ottamalla sen pois käytöstä.
-      Kulutustiedoston analyysi perustuu pyytämäsi palvelun
-      toteuttamiseen.</p>
-    </section>
-
-    <section>
-      <h2>Kulutustiedot (Datahub CSV)</h2>
-      <p>Lataamasi Datahub-kulutustiedosto käsitellään palvelimella
-      analyysin laskemiseksi (esim. tehomaksuarvio ja vuosikulutus).
-      Tiedostoa ei yhdistetä henkilöllisyyteesi eikä sitä säilytetä
-      analyysin jälkeen.</p>
-    </section>
-
-    <section>
-      <h2>Tietojen siirto EU:n ulkopuolelle</h2>
-      <p>Push-ilmoitukset välitetään Expon (650 Industries, Inc.,
-      Yhdysvallat) sekä Applen ja Googlen ilmoituspalveluiden kautta.
-      Push-token ja ilmoituksen sisältö voivat tällöin siirtyä EU:n
-      ulkopuolelle. Siirrossa noudatetaan tietosuoja-asetuksen V luvun
-      mukaisia suojatoimia. Muut palvelimelle tallennetut tiedot
-      säilytetään EU:n alueella.</p>
-    </section>
-
-    <section>
-      <h2>Sinun oikeutesi</h2>
-      <p>Sinulla on oikeus saada pääsy itseäsi koskeviin tietoihin, pyytää
-      niiden oikaisemista tai poistamista sekä peruuttaa suostumuksesi.
-      Voit toteuttaa poiston itse ottamalla Hintavartijan pois käytöstä tai
-      ottamalla yhteyttä rekisterinpitäjään. Sinulla on myös oikeus tehdä
-      valitus valvontaviranomaiselle (Tietosuojavaltuutetun toimisto,
-      <a href="https://tietosuoja.fi">tietosuoja.fi</a>).</p>
-    </section>
-
-    <section>
-      <h2>Mitä emme tee</h2>
-      <p>Emme myy tai luovuta tietojasi kolmansille osapuolille
-      markkinointiin. Sovelluksessa ei ole mainosseurantaa. Tarjouslinkit
-      avautuvat sähkönmyyjien omille sivuille, joilla on omat
-      tietosuojakäytäntönsä.</p>
-    </section>
-
-    <section>
-      <h2>Yhteystiedot</h2>
-      <p>Tietosuojaan liittyvissä kysymyksissä voit ottaa yhteyttä:
-      <a href="mailto:tietosuoja@wattitutka.fi">tietosuoja@wattitutka.fi</a></p>
-    </section>
+    <footer>
+      <p>Wattitutka on <strong>Fryst Oy</strong>:n kehittämä sovellus.</p>
+      <p>
+        <a href="/tietosuoja.html">Tietosuojaseloste</a>
+      </p>
+      <p>
+        Yhteydenotot: <a href="mailto:info@wattitutka.fi">info@wattitutka.fi</a><br>
+        Tuki: <a href="mailto:tuki@wattitutka.fi">tuki@wattitutka.fi</a>
+      </p>
+    </footer>
   </main>
 </body>
 </html>
